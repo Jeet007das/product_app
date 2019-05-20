@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Product_Data from '../Product_Data/products';
 import { Redirect } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 class ProductShow extends Component {
     constructor(props) {
@@ -39,10 +40,9 @@ class ProductShow extends Component {
                          <h3>Price: {this.state.product_data.price}</h3>
                          <p>{this.state.product_data.description}</p>
                          <h5>Qty: {this.state.product_data.in_stock} Hurry Up!!!</h5>
- 
-                     <div className="btn">
-                         <button type="button" className="btn btn-primary">Buy Now</button>
-                      </div>
+                     <Link  to={{ pathname: '/customer', state: { proObj: this.state.product_data } }} className="btn btn-primary">
+                             <b>Buy Now</b>
+                     </Link>
                       </div>:<div style={{color:"red"}}>
                           <h1>No Product is selected</h1>
                       </div>

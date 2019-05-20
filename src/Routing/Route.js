@@ -3,6 +3,8 @@ import { Router, Route } from 'react-router-dom';
 import Header from '../Components/HeaderComponent';
 import ProductShowComponent from '../Components/ProductShowComponent';
 import ProductList from '../Components/ProductComponent';
+import RegisterStore from '../Components/RegisterStoreComponent';
+import CustomerDetails from '../Components/CustomerDetailComponent';
 
 import history from '../routingHistory';
 
@@ -16,7 +18,9 @@ class Routing extends Component {
                         <Header />
                         <Route path="/" exact component={ProductList} />
                         <Route path="/product" exact component={ProductShowComponent}/>
-                     </div>
+                        <Route path="/store_register" exact component={RegisterStore}/>
+                        <Route path="/customer" exact component={CustomerDetails}/>
+                    </div>
                 </Router>
 
             </div>
