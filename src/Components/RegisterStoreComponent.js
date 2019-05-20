@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import swal from 'sweetalert';
+import axios from 'axios';
+import baseUrl from '../common/config';
 
 
 class RegisterStore extends Component {
@@ -14,14 +17,30 @@ class RegisterStore extends Component {
         }
     }
 
-registerStore =() =>{
+registerStore = async() =>{
     console.log("Here we register store");
     console.log(this.state.city);
-    console.log(this.state.State);
-    console.log(this.state.deliveryUpto);
     
 
-    
+    if(this.state.storeName !== '' && this.state.Street !== '' && this.state.city !== '' && this.state.State !== '' && this.state.deliveryUpto !== ''){
+        console.log(baseUrl);
+        
+        axios.post(baseUrl+'/register/_registerStore', {
+            store_name: this.state.storeName,
+            street: this.state.Street,
+            city:this.state.city,
+            state:this.state.State,
+            deliveryUpto:this.state.deliveryUpto
+          })
+          .then(function (response) {
+            console.log(response);
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
+    }else{
+        swal("Something is missing", "error");
+    }
     
     
 }

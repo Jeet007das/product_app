@@ -40,7 +40,7 @@ class ProductShow extends Component {
                          <h3>Price: {this.state.product_data.price}</h3>
                          <p>{this.state.product_data.description}</p>
                          <h5>Qty: {this.state.product_data.in_stock} Hurry Up!!!</h5>
-                     <Link  to={{ pathname: '/customer', state: { proObj: this.state.product_data } }} className="btn btn-primary">
+                     <Link  to={{ pathname: '/customer', state: { _id: this.state.product_data.product_id, storeId: this.state.product_data.store_id} }} className="btn btn-primary">
                              <b>Buy Now</b>
                      </Link>
                       </div>:<div style={{color:"red"}}>

@@ -6,7 +6,7 @@ let product_list =
         price:50,
         description:"Amul Butter from Amul Dairy is a staple at millions of Indian families' tables. Butter is a source of healthy fat but packaged butter like this product has added salt which may be of concern to some people.",
         in_stock:50,
-        images:["amul-butter-1.jpg", "amul-butter-2.jpg"]
+        store_id:'5ce30a54f7b7633a54e258fd'
     },
 
     {
@@ -15,7 +15,7 @@ let product_list =
         price:500,
         description:"This Chocolate Cake Recipe truly is the BEST EVER! You HAVE TO try it! It's a 3-layer, super moist chocolate cake with a rich, melt-in-your-mouth chocolate buttercream frosting. It's covered with a chocolate ganache drip.",
         in_stock:5,
-        images:["cake-1.jpg", "cake-2.jpg"]
+        store_id:'5ce30a54f7b7633a54e258fd'
     },
 
     {
@@ -24,7 +24,7 @@ let product_list =
         price:75,
         description:"A cookie is a baked or cooked food that is small, flat and sweet. It usually contains flour, sugar and some type of oil or fat. It may include other ingredients such as raisins, oats, chocolate chips, nuts, etc.",
         in_stock:500,
-        images:["cookie-1.jpg", "cookie-2.jpg"]
+        store_id:'5ce30a54f7b7633a54e258fd'
     },
 
     {
@@ -33,7 +33,7 @@ let product_list =
         price:80,
         description:"Pastry is a dough of flour, water and shortening (solid fats, including butter) that may be savoury or sweetened. Sweetened pastries are often described as sweet of happiness.",
         in_stock:37,
-        images:["pastry-1.jpg", "pastry-2.jpg"]
+        store_id:'5ce30a54f7b7633a54e258fd'
     },
 
     {
@@ -42,7 +42,7 @@ let product_list =
         price:89,
         description:"Pizza Rolls are a frozen food product created by food industry entrepreneur Jeno Paulucci, who specialized in frozen Chinese food, in 1951.[15] After Jeno's sold the brand in 1985, it was acquired by Pillsbury which owned Totino's pizza.",
         in_stock:100,
-        images:["rolls-1.jpg", "rolls-2.jpg"]
+        store_id:'5ce30a54f7b7633a54e258fd'
     }
 
 ]
